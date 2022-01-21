@@ -14,13 +14,10 @@ namespace MyNumberOneQuestion
         public static void LargestInPut(List<int> Input)
         {
             string ReturnOutput = string.Empty;
-            List<string> newInputList = Input.ConvertAll<string>
-            (delegate(int x){return x.ToString();});
-            newInputList.Sort(CompareElement);
 
             for(int k = 0; k < Input.Count; k++)
             {
-                ReturnOutput = ReturnOutput + newInputList[k];
+                ReturnOutput = InputList[k];
             }
             if(ReturnOutput[0] == '0' && ReturnOutput.Length > 1)
             {
